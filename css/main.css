@@ -1,0 +1,114 @@
+html {
+  font-family: sans-serif;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+  background: white url("../images/background.png");
+}
+
+div {
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  background-color: #8ab2f2;
+}
+
+input {
+  margin-bottom: 5px;
+}
+
+img {
+  background: white;
+  margin: 15px;
+  border: 1px solid navy;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px #888888;
+  padding: 5px;
+}
+
+header {
+  padding-top: 10px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+footer {
+  padding-top: 10px;
+  clear: both;
+}
+
+.current {
+  font-weight: bolder;
+  background-color: lightgrey;
+
+}
+
+.example {
+  font-size: 0.65em;
+}
+
+.single {
+  clear: both;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid navy;
+  border-radius: 10px;
+  box-shadow: 5px 5px 3px #888888;
+}
+
+.light {
+  background-color: #bed4f7;
+}
+
+.noBorder {
+  border: none;
+  box-shadow: none;
+  border-radius: 15px;
+}
+
+.noBackground {
+  background-color: transparent;
+}
+
+.warning {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.warning .warningText {
+    visibility: hidden;
+    width: 120px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.warning:hover .warningText {
+    visibility: visible;
+    width: 400px;
+    top: 85%;
+    left: 50%;
+    margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
